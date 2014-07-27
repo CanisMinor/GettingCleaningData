@@ -89,17 +89,16 @@ mergedData <- merge(inTrain, inTest, all=TRUE)
  names(mergedData)[429] <- "fBodyGyroStdDevZ"
  names(mergedData)[503] <- "fBodyAccMagMean"
  names(mergedData)[504] <- "fBodyAccMagStdDev"
- names(mergedData)[516] <- "fBodyBodyAccJerkMagMean"
- names(mergedData)[517] <- "fBodyBodyAccJerkMagStdDev"
- names(mergedData)[529] <- "fBodyBodyGyroMagMean"
- names(mergedData)[530] <- "fBodyBodyGyroMagStdDev"
- names(mergedData)[542] <- "fBodyBodyGyroJerkMagMean"
- names(mergedData)[543] <- "fBodyBodyGyroJerkMagStdDev"
+ names(mergedData)[516] <- "fBodyAccJerkMagMean"
+ names(mergedData)[517] <- "fBodyAccJerkMagStdDev"
+ names(mergedData)[529] <- "fBodyGyroMagMean"
+ names(mergedData)[530] <- "fBodyGyroMagStdDev"
+ names(mergedData)[542] <- "fBodyGyroJerkMagMean"
+ names(mergedData)[543] <- "fBodyGyroJerkMagStdDev"
 
 
 #remove any columns that do NOT represent mean and standard deviation measurements
-cleanData <- mergedData[,-c(seq(7,40,1), seq(47,80,1), seq(87,120,1), seq(127,160,1), seq(167,200,1), seq(203, 213, 1), seq(26,226,1), seq(229,239,1), seq(242, 252,1), seq(255, 265,1), seq(272,344,1), seq(351,423,1), seq(430,502,1), seq(505,515,1), seq(518, 528, 1), seq(531,541,1)), seq(544,561,1)]
-
+cleanData <- mergedData[,-c(seq(7,40,1), seq(47,80,1), seq(87,120,1), seq(127,160,1), seq(167,200,1), seq(203, 213, 1), seq(26,226,1), seq(229,239,1), seq(242, 252,1), seq(255, 265,1), seq(272,344,1), seq(351,423,1), seq(430,502,1), seq(505,515,1), seq(518, 528, 1), seq(531,541,1), seq(544,561,1))]
 
 #evalaute mean and standard deviations for each subject and activity
 # meanData <- aggregate(mergedData, by=mergedData[c("label", "subject")], FUN=mean)

@@ -2,27 +2,31 @@ Code Book for Tidy Data Set
 
 Variable Names
 
-Coordinate suffixes (X, Y, Z) denote the axis along which the measurement has been made.  Suffixes "Mean" and "StdDev" denote measurements of the mean and standard deviation, respectively. 
+The variable names are constructed as follows.  
+
+-- First a prefix, t or f, depending on whether the measurement is in the time (t) or frequency (f) domain.
+
+-- Secondly, "Body" or "Gravity", depending on 
+
+-- Third, "Acc" denotes measurement on accelaration, "Gyro" on gyroscopic motion, "Jerk" on jerk signals.
+
+Following these conventions, data on the following variables are represented in the tidy data file:
 
 
-
-tBodyAcc 
 tGravityAcc
-tBodyAccJerk
-tBodyGyro
+tBodyAcc 
 tBodyJerk
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
+tBodyGyro
+tBodyAccJerk
 tBodyGyroJerk
 
 fBodyAcc
 fBodyAccJerk
 fBodyGyro
-fBodyAccMag
-fBodyBodyAccJerkMag
-fBodyBodyGyroMag
-fBodyBodyGyroJerkMag
+fBodyGyroJerk
 
+These variable names were appended with suffixes, as follows,
+-- "Mag" denotes calculated Euclidean magnitude of the variable over the three coordinate axes (X, Y and Z).
+-- Coordinate suffixes (X, Y, Z) denote the axis along which the measurement has been made.  
+-- "Mean" and "StdDev" denote measurements of the mean and standard deviation, respectively.
 
