@@ -1,0 +1,28 @@
+Code Book for Tidy Data Set
+
+Variable Names
+
+Coordinate suffixes (X, Y, Z) denote the axis along which the measurement has been made.  Suffixes "Mean" and "StdDev" denote measurements of the mean and standard deviation, respectively. 
+
+
+
+tBodyAcc 
+tGravityAcc
+tBodyAccJerk
+tBodyGyro
+tBodyJerk
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerk
+
+fBodyAcc
+fBodyAccJerk
+fBodyGyro
+fBodyAccMag
+fBodyBodyAccJerkMag
+fBodyBodyGyroMag
+fBodyBodyGyroJerkMag
+
+

@@ -30,80 +30,82 @@ mergedData <- merge(inTrain, inTest, all=TRUE)
 
 #rename variables
  names(mergedData)[1] <- "tBodyAccMeanX"
- names(mergedData)[2] <- tBodyAccMeanY
- names(mergedData)[3] <- tBodyAccMeanZ
- names(mergedData)[4] <- tBodyAccStdDevX
- names(mergedData)[5] <- tBodyAccStdDevY
- names(mergedData)[6] <- tBodyAccStdDevZ
- names(mergedData)[41] <- tGravityAccMeanX
- names(mergedData)[42] <- tGravityAccMeanY
- names(mergedData)[43] <- tGravityAccMeanZ
- names(mergedData)[44] <- tGravityAccStdDevX
- names(mergedData)[45] <- tGravityAccStdDevY
- names(mergedData)[46] <- tGravityAccStdDevZ
- names(mergedData)[81] <- tBodyAccJerkMeanX
- names(mergedData)[82] <- tBodyAccJerkMeanY
- names(mergedData)[83] <- tBodyAccJerkMeanZ
- names(mergedData)[84] <- tBodyAccJerkStdDevX
- names(mergedData)[85] <- tBodyAccJerkStdDevY
- names(mergedData)[86] <- tBodyAccJerkStdDevZ
- names(mergedData)[121] <- tBodyGyroMeanX
- names(mergedData)[122] <- tBodyGyroMeanY
- names(mergedData)[123] <- tBodyGyroMeanZ
- names(mergedData)[124] <- tBodyGyroStdDevX
- names(mergedData)[125] <- tBodyGyroStdDevY
- names(mergedData)[126] <- tBodyGyroStdDevZ
- names(mergedData)[161] <- tBodyGyroJerkMeanX
- names(mergedData)[162] <- tBodyGyroJerkMeanY
- names(mergedData)[163] <- tBodyGyroJerkMeanZ
- names(mergedData)[164] <- tBodyGyroJerkStdDevX
- names(mergedData)[165] <- tBodyGyroJerkStdDevY
- names(mergedData)[166] <- tBodyGyroJerkStdDevZ
- names(mergedData)[201] <- tBodyAccMagMean
- names(mergedData)[202] <- tBodyAccMagStdDev
- names(mergedData)[214] <- tGravityAccMagMean
- names(mergedData)[215] <- tGravityAccMagStdDev
- names(mergedData)[227] <- tBodyAccJerkMagMean
- names(mergedData)[228] <- tBodyAccJerkMagStdDev
- names(mergedData)[240] <- tBodyGyroMagMean
- names(mergedData)[241] <- tBodyGyroMagStdDev
- names(mergedData)[253] <- tBodyGyroJerkMagMean
- names(mergedData)[254] <- tBodyGyroJerkMagStdDev
- names(mergedData)[266] <- fBodyAccMeanX
- names(mergedData)[267] <- fBodyAccMeanY
- names(mergedData)[268] <- fBodyAccMeanZ
- names(mergedData)[269] <- fBodyAccStdDevX
- names(mergedData)[270] <- fBodyAccStdDevY
- names(mergedData)[271] <- fBodyAccStdDevZ
- names(mergedData)[345] <- fBodyAccJerkMeanX
- names(mergedData)[346] <- fBodyAccJerkMeanY
- names(mergedData)[347] <- fBodyAccJerkMeanZ
- names(mergedData)[348] <- fBodyAccJerkStdDevX
- names(mergedData)[349] <- fBodyAccJerkStdDevY
- names(mergedData)[350] <- fBodyAccJerkStdDevZ
- names(mergedData)[424] <- fBodyGyroMeanX
- names(mergedData)[425] <- fBodyGyroMeanY
- names(mergedData)[426] <- fBodyGyroMeanZ
- names(mergedData)[427] <- fBodyGyroStdDevX
- names(mergedData)[428] <- fBodyGyroStdDevY
- names(mergedData)[429] <- fBodyGyroStdDevZ
- names(mergedData)[503] <- fBodyAccMagMean
- names(mergedData)[504] <- fBodyAccMagStdDev
- names(mergedData)[516] <- fBodyBodyAccJerkMagMean
- names(mergedData)[517] <- fBodyBodyAccJerkMagStdDev
- names(mergedData)[529] <- fBodyBodyGyroMagMean
- names(mergedData)[530] <- fBodyBodyGyroMagStdDev
- names(mergedData)[542] <- fBodyBodyGyroJerkMagMean
- names(mergedData)[543] <- fBodyBodyGyroJerkMagStdDev
+ names(mergedData)[2] <- "tBodyAccMeanY"
+ names(mergedData)[3] <- "tBodyAccMeanZ"
+ names(mergedData)[4] <- "tBodyAccStdDevX"
+ names(mergedData)[5] <- "tBodyAccStdDevY"
+ names(mergedData)[6] <- "tBodyAccStdDevZ"
+ names(mergedData)[41] <- "tGravityAccMeanX"
+ names(mergedData)[42] <- "tGravityAccMeanY"
+ names(mergedData)[43] <- "tGravityAccMeanZ"
+ names(mergedData)[44] <- "tGravityAccStdDevX"
+ names(mergedData)[45] <- "tGravityAccStdDevY"
+ names(mergedData)[46] <- "tGravityAccStdDevZ"
+ names(mergedData)[81] <- "tBodyAccJerkMeanX"
+ names(mergedData)[82] <- "tBodyAccJerkMeanY"
+ names(mergedData)[83] <- "tBodyAccJerkMeanZ"
+ names(mergedData)[84] <- "tBodyAccJerkStdDevX"
+ names(mergedData)[85] <- "tBodyAccJerkStdDevY"
+ names(mergedData)[86] <- "tBodyAccJerkStdDevZ"
+ names(mergedData)[121] <- "tBodyGyroMeanX"
+ names(mergedData)[122] <- "tBodyGyroMeanY"
+ names(mergedData)[123] <- "tBodyGyroMeanZ"
+ names(mergedData)[124] <- "tBodyGyroStdDevX"
+ names(mergedData)[125] <- "tBodyGyroStdDevY"
+ names(mergedData)[126] <- "tBodyGyroStdDevZ"
+ names(mergedData)[161] <- "tBodyGyroJerkMeanX"
+ names(mergedData)[162] <- "tBodyGyroJerkMeanY"
+ names(mergedData)[163] <- "tBodyGyroJerkMeanZ"
+ names(mergedData)[164] <- "tBodyGyroJerkStdDevX"
+ names(mergedData)[165] <- "tBodyGyroJerkStdDevY"
+ names(mergedData)[166] <- "tBodyGyroJerkStdDevZ"
+ names(mergedData)[201] <- "tBodyAccMagMean"
+ names(mergedData)[202] <- "tBodyAccMagStdDev"
+ names(mergedData)[214] <- "tGravityAccMagMean"
+ names(mergedData)[215] <- "tGravityAccMagStdDev"
+ names(mergedData)[227] <- "tBodyAccJerkMagMean"
+ names(mergedData)[228] <- "tBodyAccJerkMagStdDev"
+ names(mergedData)[240] <- "tBodyGyroMagMean"
+ names(mergedData)[241] <- "tBodyGyroMagStdDev"
+ names(mergedData)[253] <- "tBodyGyroJerkMagMean"
+ names(mergedData)[254] <- "tBodyGyroJerkMagStdDev"
+ names(mergedData)[266] <- "fBodyAccMeanX"
+ names(mergedData)[267] <- "fBodyAccMeanY"
+ names(mergedData)[268] <- "fBodyAccMeanZ"
+ names(mergedData)[269] <- "fBodyAccStdDevX"
+ names(mergedData)[270] <- "fBodyAccStdDevY"
+ names(mergedData)[271] <- "fBodyAccStdDevZ"
+ names(mergedData)[345] <- "fBodyAccJerkMeanX"
+ names(mergedData)[346] <- "fBodyAccJerkMeanY"
+ names(mergedData)[347] <- "fBodyAccJerkMeanZ"
+ names(mergedData)[348] <- "fBodyAccJerkStdDevX"
+ names(mergedData)[349] <- "fBodyAccJerkStdDevY"
+ names(mergedData)[350] <- "fBodyAccJerkStdDevZ"
+ names(mergedData)[424] <- "fBodyGyroMeanX"
+ names(mergedData)[425] <- "fBodyGyroMeanY"
+ names(mergedData)[426] <- "fBodyGyroMeanZ"
+ names(mergedData)[427] <- "fBodyGyroStdDevX"
+ names(mergedData)[428] <- "fBodyGyroStdDevY"
+ names(mergedData)[429] <- "fBodyGyroStdDevZ"
+ names(mergedData)[503] <- "fBodyAccMagMean"
+ names(mergedData)[504] <- "fBodyAccMagStdDev"
+ names(mergedData)[516] <- "fBodyBodyAccJerkMagMean"
+ names(mergedData)[517] <- "fBodyBodyAccJerkMagStdDev"
+ names(mergedData)[529] <- "fBodyBodyGyroMagMean"
+ names(mergedData)[530] <- "fBodyBodyGyroMagStdDev"
+ names(mergedData)[542] <- "fBodyBodyGyroJerkMagMean"
+ names(mergedData)[543] <- "fBodyBodyGyroJerkMagStdDev"
 
 
 #remove any columns that do NOT represent mean and standard deviation measurements
-meanData <- subset(mergedData,
+cleanData <- mergedData[,-c(seq(7,40,1), seq(47,80,1), seq(87,120,1), seq(127,160,1), seq(167,200,1), seq(203, 213, 1), seq(26,226,1), seq(229,239,1), seq(242, 252,1), seq(255, 265,1), seq(272,344,1), seq(351,423,1), seq(430,502,1), seq(505,515,1), seq(518, 528, 1), seq(531,541,1))]
 
 
 
 #evalaute mean and standard deviations for each subject and activity
-meanData <- aggregate(mergedData, by=mergedData[c("label", "subject")], FUN=mean)
-stdDevData <- aggregate(mergedData, by=mergedData[c("label", "subject")], FUN=sd)
+# meanData <- aggregate(mergedData, by=mergedData[c("label", "subject")], FUN=mean)
+# stdDevData <- aggregate(mergedData, by=mergedData[c("label", "subject")], FUN=sd)
 
 
+#write tidy data to file 
+write.table(cleanData, "./tidyData.txt", sep="\t")
