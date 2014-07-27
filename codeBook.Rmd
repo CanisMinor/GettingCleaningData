@@ -6,7 +6,7 @@ The variable names are constructed as follows.
 
 -- First a prefix, t or f, depending on whether the measurement is in the time (t) or frequency (f) domain.
 
--- Secondly, "Body" or "Gravity", depending on 
+-- Secondly, "Body" or "Gravity", depending on whether the movement refers to gravitational motion or body motion.
 
 -- Third, "Acc" denotes measurement on accelaration, "Gyro" on gyroscopic motion, "Jerk" on jerk signals.
 
