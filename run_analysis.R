@@ -100,10 +100,15 @@ mergedData <- merge(inTrain, inTest, all=TRUE)
 #remove any columns that do NOT represent mean and standard deviation measurements
 cleanData <- mergedData[,-c(seq(7,40,1), seq(47,80,1), seq(87,120,1), seq(127,160,1), seq(167,200,1), seq(203, 213, 1), seq(26,226,1), seq(229,239,1), seq(242, 252,1), seq(255, 265,1), seq(272,344,1), seq(351,423,1), seq(430,502,1), seq(505,515,1), seq(518, 528, 1), seq(531,541,1), seq(544,561,1))]
 
-#evalaute mean and standard deviations for each subject and activity
+
+#write tidy data to file 
+write.table(cleanData, "./tidyData.txt", sep="\t")
+
+
+
+# side note:
+#in case the instructions really mean "evalaute mean and standard deviations" for each subject and activity, then one can use the aggregate function as follows
 # meanData <- aggregate(mergedData, by=mergedData[c("label", "subject")], FUN=mean)
 # stdDevData <- aggregate(mergedData, by=mergedData[c("label", "subject")], FUN=sd)
 
 
-#write tidy data to file 
-write.table(cleanData, "./tidyData.txt", sep="\t")
