@@ -1,11 +1,11 @@
 #read in test and training data from downloaded file
 #(the UCI_HAR_Dataset folder needs to be located in the working directory)
-inTrain <- read.table("../UCI_HAR_Dataset/train/X_train.txt")
-trainLabels <- read.table("../UCI_HAR_Dataset/train/y_train.txt")
-trainSubjects <- read.table("../UCI_HAR_Dataset/train/subject_train.txt")
-inTest <- read.table("../UCI_HAR_Dataset/test/X_test.txt")
-testLabels <- read.table("../UCI_HAR_Dataset/test/y_test.txt")
-testSubjects <- read.table("../UCI_HAR_Dataset/test/subject_test.txt")
+inTrain <- read.table("./UCI_HAR_Dataset/train/X_train.txt")
+trainLabels <- read.table("./UCI_HAR_Dataset/train/y_train.txt")
+trainSubjects <- read.table("./UCI_HAR_Dataset/train/subject_train.txt")
+inTest <- read.table("./UCI_HAR_Dataset/test/X_test.txt")
+testLabels <- read.table("./UCI_HAR_Dataset/test/y_test.txt")
+testSubjects <- read.table("./UCI_HAR_Dataset/test/subject_test.txt")
 
 
 
@@ -16,7 +16,7 @@ inTest$label <- testLabels$V1
 inTest$subject <- testSubjects$V1
 
 #read in feature labels
-featureLabels <- read.table("../UCI_HAR_Dataset/features.txt")
+featureLabels <- read.table("./UCI_HAR_Dataset/features.txt")
 
 #name each column using activity labels
 names(inTrain)[562] <- "label"
