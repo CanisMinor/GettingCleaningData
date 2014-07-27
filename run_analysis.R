@@ -102,8 +102,7 @@ cleanData <- mergedData[,-c(seq(7,40,1), seq(47,80,1), seq(87,120,1), seq(127,16
 
 
 #write tidy data to file 
-write.table(cleanData, "./tidyData.txt", sep="\t")
-
+write.table(cleanData, "./tidyData.txt", sep=", ", row.names=FALSE)
 
 
 # side note:
